@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --tx-color: #E1E1E6;
+  --tx-color-dark: #7C7C8A;
+  --tx-color-table-dark: #4E5455;
+
+  --hue: 195;
+  --tb-header-color: hsl(var(--hue), 89%, 14%);
+  --primary-color: hsl(var(--hue), 65%, 7%);
+  --secondary-color: hsl(var(--hue), 64%, 6%, 0.5);
+  --border-color: hsl(var(--hue), 31%, 42%);
+  --action-color: hsl(var(--hue), 91%, 25%);
+
+--cor: #4a7d8c;
+  --alert-color: #F75A68;
+}
+
+body {
+  background: #000000;
+  color: var(--tx-color);
+
+  font-size: 1.6rem;
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/*  ---------- SEARCH STYLE ---------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 11.5rem 0 8.7rem 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  width: 64rem;
+}
+
+.search input {
+  border: none;
+  color: var(--tx-color);
+
+  padding: 1.6rem;
+  width: 100%;
+
+  background: var(--primary-color);
+  border-radius: .5rem;
+}
+
+.search input::placeholder {
+  color: var(--tx-color-dark);
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: .8rem;
+
+  padding: 1.2rem 3.2rem;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: var(--action-color);
+
+  border-radius: .5rem;
+  border: none;
+
+  cursor: pointer;
+
+  transition: 400ms;
+}
+
+.search button:hover svg path {
+  fill: var(--action-color)
+}
+
+.search button:hover {
+  color: var(--action-color);
+  background-color: #ffffff;
+  fill: var(--action-color)
+}
+
+/*  ---------- TABLE STYLE ---------- */
+
+.container {
+  width: 100%;
+  margin-bottom: 11.6rem;
+
+  border: 1px solid var(--border-color);
+  border-radius: 1.2rem;
+}
+
+table {
+  width: 100%;
+  
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--tx-color);
+
+  overflow: hidden;
+  
+  border-radius: 1.2rem;
+  border-collapse: collapse;
+}
+
+table th {
+  background: var(--tb-header-color);
+  text-align: left;
+  line-height: 150%;
+  padding: 1.6rem 0 1.6rem 4rem;
+}
+
+thead, tbody tr {
+  display: table;
+  table-layout: fixed;
+}
+
+/*  ---------- TABLE BODY STYLE ---------- */
+
+table tbody {
+  display: block;
+  overflow: auto;
+  overflow: overlay;
+  max-height: 36.5rem;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--primary-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--secondary-color);
+}
+
+table tbody tr:last-child {
+  border-bottom: none;
+}
+  
+table td {
+  padding: 2.4rem 0 2.4rem 4rem;
+  line-height: 2.4rem;
+}
+
+table td:first-child,
+table th:first-child{
+  width: 50rem;
+}
+
+table td:nth-child(2),
+table th:nth-child(2){
+  width: 21.8rem;
+}
+
+table td:nth-child(3),
+table th:nth-child(3){
+  width: 22rem;
+}
+
+table td:last-child,
+table th:last-child{
+  width: 17.8rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-weight: 700;
+}
+
+.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+  
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user a {
+  text-decoration: none;
+  color: var(--tx-color);
+}
+
+.user a span {
+  font-weight: 400;
+}
+
+td .remove {
+  color: var(--alert-color);
+
+  cursor: pointer;
+}
+
+/* ---------- NO FAVORITE ---------- */
+
+.container.no-favorite {
+  display: grid;
+  grid-template-rows: 6.2rem 1fr;
+  height: 68.8rem;
+}
+
+.container.no-favorite table {
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+.no-fav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 6rem;
+}
+
+.no-fav-container p {
+  font-family: 'Roboto Mono';
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 2.5rem;
+  color: var(--tx-color-table-dark);
+}
+
+.hide {
+  display: none;
+}
+
+/* ---------- SCROLLBAR STYLE ---------- */
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-color) var(--primary-color);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: .6rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 1rem;
+  border: none;
+}
