@@ -15,18 +15,18 @@
 
 ## ✏️ About
 
-This is a project developed on Stage 6 in the Explorer course at the [Rocketseat School](https://www.rocketseat.com.br/). To access the entire course's projects [click on this link](https://github.com/jeadamek/explorer-rocketseat). 
+This project was developed on Stage 6 in the Explorer course at the [Rocketseat School](https://www.rocketseat.com.br/).  To access the entire course assignments click [this link](https://github.com/jeadamek/explorer-rocketseat). 
 
 
-The project's main goal was to build a page to consume API from Github and manipulate data. Add, delete and display data in a table using JavaScript. For that concepts as Object-oriented programming, events, classes, inheritance and polymorphism were applied.
+The project's main goal was to build a page to consume API from Github and manipulate data. Add, delete, and display data in a table using JavaScript. For that concepts such as Object-oriented programming, events, classes, inheritance, and polymorphism were applied.
 
 
 ### I could practice and study:
 
 - Constructor Class;
-- Promises using Async Await;
-- Try, catch and throw;
-- Github API;
+- Promise using Async Await;
+- Try, catch, and throw;
+- GitHub API;
 - Immutability in Functional Programming;
 - Object-oriented programming;
 - Local storage;
@@ -37,7 +37,8 @@ The project's main goal was to build a page to consume API from Github and manip
 
 
 
-### The project can be seen in the images below:<br/>
+
+### The project's preview can be seen below:<br/>
 
 <div align='center'>
   <img src="https://user-images.githubusercontent.com/78454317/219875431-262b13c5-f2c6-4925-b078-28947b115a21.gif" alt="Preview">
@@ -62,6 +63,11 @@ To access the project, click on the link below:
 
 ## 🎨 Layout
 🔗 [View on Figma](https://www.figma.com/file/0gk9bWcq6qGVBfyPOddFZT/%5BDesafios-Explorer%5D-GitFav-(Copy)-(Copy)?node-id=104%3A48&t=9SLoYpad5RFlQJpH-1)
+
+
+## 📝 License
+
+This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
 
 
 ## 🎯 Author
